@@ -1,5 +1,5 @@
 {
-  "name": "jiane-table",
+  "name": "jiane-site",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -11,5 +11,11 @@
     "next": "15.2.4",
     "react": "19.0.0",
     "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.0.0"
   }
 }
