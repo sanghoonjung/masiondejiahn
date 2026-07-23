@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Noto+Sans+KR:wght@300;400;500;600&display=swap');
+
+:root {
+  --paper: #f4f0e8;
+  --ink: #182018;
+  --olive: #3f4a35;
+  --sage: #9ba38f;
+  --line: rgba(24, 32, 24, .16);
+  --cream: #fbf8f1;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Noto Sans KR', sans-serif; }
+button, input { font: inherit; }
+
+.hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px 24px; background: radial-gradient(circle at 50% 40%, #fbf8f1 0, #f4f0e8 58%, #e8e1d5 100%); }
+.eyebrow, .section-label { font-size: 11px; letter-spacing: .26em; text-transform: uppercase; color: var(--olive); font-weight: 600; }
+.brand { border: 0; background: transparent; font-family: 'DM Serif Display', serif; font-size: clamp(84px, 18vw, 220px); line-height: .85; margin: 28px 0 18px; color: var(--ink); cursor: default; }
+.brand-korean { font-family: 'DM Serif Display', serif; font-size: 20px; margin: 0 0 44px; }
+.hero-meta { display: flex; gap: 34px; font-size: 11px; letter-spacing: .15em; color: #5e6658; }
+.scroll { margin-top: 70px; color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--ink); padding-bottom: 5px; font-size: 13px; }
+.section { padding: 110px max(24px, calc((100vw - 1120px) / 2)); }
+.menu-section h1 { font-family: 'DM Serif Display', serif; font-weight: 400; font-size: clamp(42px, 6vw, 82px); line-height: 1.05; margin: 24px 0 70px; max-width: 900px; }
+.course-list { border-top: 1px solid var(--line); }
+.course-card { display: grid; grid-template-columns: 100px 1fr; gap: 24px; padding: 36px 0; border-bottom: 1px solid var(--line); }
+.course-index { font-family: 'DM Serif Display', serif; font-size: 18px; color: var(--sage); }
+.course-card h2 { font-family: 'DM Serif Display', serif; font-size: clamp(30px, 4vw, 52px); font-weight: 400; margin: 0 0 7px; }
+.course-subtitle { margin: 0 0 13px; font-size: 15px; }
+.course-note { margin: 0; color: #667064; font-size: 13px; font-weight: 300; }
+.story { background: var(--olive); color: var(--cream); }
+.story .section-label { color: #c6ccb9; }
+.story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: end; margin-top: 34px; }
+.story h2 { font-family: 'DM Serif Display', serif; font-size: clamp(48px, 7vw, 94px); font-weight: 400; line-height: .98; margin: 0; }
+.story p { font-size: 18px; line-height: 1.9; color: #dfe3d7; margin: 0; max-width: 520px; }
+.chef-panel { padding: 90px max(24px, calc((100vw - 1120px) / 2)); background: #11150f; color: #edf0e8; }
+.chef-header { display: flex; justify-content: space-between; align-items: end; margin-bottom: 48px; }
+.chef-header h2 { font-family: 'DM Serif Display', serif; font-size: 56px; font-weight: 400; margin: 8px 0 0; }
+.chef-header button { background: transparent; border: 1px solid #56604f; color: #edf0e8; padding: 10px 16px; border-radius: 999px; cursor: pointer; }
+.chef-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.panel-block { background: #1a2017; border: 1px solid #2e382a; border-radius: 18px; padding: 28px; }
+.panel-block h3 { display: flex; justify-content: space-between; font-family: 'DM Serif Display', serif; font-size: 30px; font-weight: 400; margin: 0 0 25px; }
+.panel-block h3 span { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; color: #9daa93; }
+.shopping-group { margin-bottom: 25px; }
+.shopping-group h4 { color: #aeb9a5; margin: 0 0 10px; font-size: 12px; letter-spacing: .08em; }
+.shopping-group label { display: flex; gap: 10px; align-items: center; padding: 7px 0; font-size: 14px; color: #e5e9df; }
+.shopping-group label.checked { color: #7e8977; text-decoration: line-through; }
+.shopping-group input { accent-color: #9daa93; }
+.timeline-row { display: grid; grid-template-columns: 100px 1fr; gap: 15px; padding: 12px 0; border-bottom: 1px solid #2d3529; font-size: 13px; }
+.timeline-row strong { color: #b9c2b1; }
+.timeline-row span { color: #dce2d7; line-height: 1.55; }
+.recipes { margin-top: 22px; }
+.recipes details, .hidden-course { border-top: 1px solid #31392d; }
+.recipes details:last-child { border-bottom: 1px solid #31392d; }
+summary { cursor: pointer; list-style: none; padding: 24px 0; font-family: 'DM Serif Display', serif; font-size: 28px; }
+summary::-webkit-details-marker { display: none; }
+.recipe-body { display: grid; grid-template-columns: 1fr 2fr; gap: 50px; padding: 0 0 35px; color: #d8ded3; }
+.recipe-body h4 { color: #9daa93; margin: 0 0 14px; }
+.recipe-body li { margin-bottom: 9px; line-height: 1.6; font-size: 14px; }
+.hidden-course { margin-top: 50px; border: 1px solid #46503f; border-radius: 18px; padding: 0 24px; background: linear-gradient(135deg, #1b2118, #242d20); }
+.hidden-course summary { font-style: italic; }
+.hidden-inner { padding-bottom: 28px; }
+.hidden-inner h3 { font-family: 'DM Serif Display', serif; font-size: 42px; margin: 12px 0; }
+.hidden-inner p { color: #cfd6ca; max-width: 800px; line-height: 1.8; }
+footer { padding: 45px 24px; text-align: center; }
+footer button { border: 0; background: transparent; color: #697063; font-size: 11px; letter-spacing: .18em; cursor: pointer; }
+
+@media (max-width: 760px) {
+  .hero-meta { gap: 14px; font-size: 9px; }
+  .section { padding-top: 80px; padding-bottom: 80px; }
+  .course-card { grid-template-columns: 46px 1fr; }
+  .story-grid, .chef-grid, .recipe-body { grid-template-columns: 1fr; gap: 30px; }
+  .story p { font-size: 16px; }
+  .chef-header h2 { font-size: 44px; }
+  .timeline-row { grid-template-columns: 82px 1fr; }
+}
